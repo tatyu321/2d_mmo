@@ -4,23 +4,11 @@ import java.io.Serializable;
 
 public class Field implements Serializable{
 	
-	private int[][] background;
-	private int[][] foreground;
-	
+	private Junk [][] the_junks;
+		
 	public Field(){
-		background = new int[10000][10000];
-			array_init(background);
-		foreground = new int[10000][10000];
-			array_init(foreground);
+		the_junks = new Junk[100][100];
 	}
 	
-	private void array_init(int[][] array){
-		for (int i=0; i<array.length;i++){
-			for (int j=0; j<array[i].length;j++){
-				array[i][j]=0;
-			}
-		}
-	}
-	
-
 }
+
